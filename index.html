@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="p-8 space-y-4">
+	<div class="flex gap-4 items-bottom">
+		<button id='get' class="p-3 bg-gray-400 rounded-xl">GET</button>
+		<div class="flex flex-col">
+			<label>Identity:</label>
+			<input id="identity" type='number' class="bg-gray-400 rounded-xl p-4 h-6">
+		</div>
+		<button id='post' class="p-3 bg-gray-400 rounded-xl">POST</button>
+	</div>
+	<div class="space-x-4">
+		<span id="success" class="text-xl text-green-500"></span>
+		<span id="error" class="text-xl text-red-500"></span>
+		<span id="message" class="italic"></span>
+	</div>
+
+	<div>
+		<div id="title" class="text-2xl font-bold"></div>
+		<div id="description" class="text-sm"></div>
+	</div>
+		<div>
+			<div id="id"></div>
+			<div id="first"></div>
+			<div id="last"></div>
+			<div id="age"></div>
+		</div>
+	</div>
+	<script src="js/1.js"></script>
+	<script src="js/2.js"></script>
+</body>
+
+</html>
